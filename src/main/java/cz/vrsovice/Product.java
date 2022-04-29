@@ -1,5 +1,7 @@
 package cz.vrsovice;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class Product {
     private String SKU;
     private int id;
@@ -37,6 +39,7 @@ public class Product {
         return type;
     }
 
+    @JsonIgnore
     public boolean isFeatured() {
         return isFeatured;
     }

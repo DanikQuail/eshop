@@ -45,8 +45,7 @@ public class ProductResource {
         for (int i = 1; i < arrayOfData.length; i++) {
             final String[] row = arrayOfData[i].split(",");
             boolean isfeatured = row[5].contains("1");
-
-            products.add(new Product(row[2], Integer.parseInt(row[0]), row[3], row[7], row[1], isfeatured));
+            products.add(new Product(row[2], Integer.parseInt(row[0]), row[3], row[7], row[1],isfeatured));
         }
     }
 
